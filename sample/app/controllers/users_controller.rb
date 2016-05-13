@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
-  skip_before_filter :require_login, only: [:index, :new, :create]
+  before_action :set_user, only: [:show, :edit, :update, :destroy] 
+  skip_before_filter :require_login, only: [:index, :new, :create]  # ユーザー一覧表示、新規作成についてはログインしていなくても行えるようにする
 
   # GET /users
   # GET /users.json
